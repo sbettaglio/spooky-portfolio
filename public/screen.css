@@ -26,7 +26,6 @@ header {
 
 .top-nav {
   width: 100%;
-  height: inherit;
   display: flex;
   justify-content: flex-start;
 }
@@ -44,10 +43,6 @@ header p {
 
 span {
   color: rgb(251, 69, 76);
-}
-
-.not-mobile {
-  display: none;
 }
 
 .port-nav ul {
@@ -97,4 +92,50 @@ footer button {
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   border-color: black;
+}
+@media (max-width: 767px) {
+  .not-mobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .top-nav {
+    justify-content: space-around;
+  }
+  .top-nav ul {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .top-nav ul li {
+    padding: 1rem;
+  }
+  .top-nav ul li a {
+    color: rgb(35, 209, 255);
+  }
+  .top-nav button {
+    background-color: black;
+    color: rgb(207, 207, 207);
+    border-color: black;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .port-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section {
+    width: 50%;
+    height: 20rem;
+  }
 }
