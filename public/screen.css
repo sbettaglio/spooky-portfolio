@@ -9,4 +9,92 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(38, 38, 38);
+  color: rgb(207, 207, 207);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 4rem;
+}
+
+.top-nav {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top-nav h3 {
+  text-align: left;
+  padding: 1rem;
+}
+
+header p {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+span {
+  color: rgb(251, 69, 76);
+}
+
+.not-mobile {
+  display: none;
+}
+
+.port-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(207, 207, 207);
+}
+
+.port-nav ul li {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 90%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+footer h3 {
+  font-size: 2.5rem;
+}
+
+footer button {
+  color: rgb(207, 207, 207);
+  background-color: rgb(0, 0, 0);
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-color: black;
 }
