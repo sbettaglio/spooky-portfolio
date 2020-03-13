@@ -139,3 +139,70 @@ footer button {
     height: 20rem;
   }
 }
+@media (min-width: 1000px) {
+  .top-nav h3 {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+  }
+  .top-nav ul li a {
+    font-size: 1.3rem;
+    padding-right: 5rem;
+  }
+  .top-nav button {
+    font-size: 1rem;
+  }
+  header p {
+    text-align: center;
+    font-size: 5.5rem;
+    padding: 1rem 15rem;
+    font-weight: bolder;
+  }
+  .port-nav {
+    padding-left: 22%;
+  }
+  .port-nav ul li a {
+    font-size: 1.2rem;
+  }
+  .first-row {
+    width: 49%;
+    height: 40rem;
+  }
+  #first-right {
+    padding-left: 2%;
+  }
+  .second-row {
+    width: 32%;
+    height: 40rem;
+  }
+  #second-left {
+    padding-right: 2%;
+  }
+  #second-middle {
+    padding-right: 2%;
+  }
+  .third-row {
+    width: 49%;
+    height: 40rem;
+  }
+  #third-right {
+    padding-left: 2%;
+    height: 40rem;
+  }
+  #third-right img {
+    height: 40rem;
+  }
+  .fourth-row {
+    width: 100%;
+    height: 40rem;
+    background-image: url(./images/image-6.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .fourth-row img {
+    display: none;
+  }
+  img {
+    width: 100%;
+  }
+}
