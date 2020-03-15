@@ -70,10 +70,6 @@ main section {
   margin-bottom: 2rem;
 }
 
-img {
-  width: 90%;
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -93,6 +89,62 @@ footer button {
   font-weight: bold;
   border-color: black;
 }
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.grid1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+main section div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40rem;
+}
+main section div a:hover {
+  background-color: black;
+  opacity: 0.6;
+  color: rgb(207, 207, 207);
+}
+.grid1 div {
+  background-image: url(./images/image-1.jpg);
+}
+.grid2 div {
+  background-image: url(./images/image-2.jpg);
+}
+.grid3 div {
+  background-image: url(./images/image-3.jpg);
+}
+.grid4 div {
+  background-image: url(./images/image-4.jpg);
+}
+.grid5 div {
+  background-image: url(./images/image-5.jpeg);
+}
+.grid6 div {
+  background-image: url(./images/image-6.jpeg);
+}
+.grid7 div {
+  background-image: url(./images/image-7.jpeg);
+}
+.grid8 div {
+  background-image: url(./images/image-8.jpeg);
+}
+main section a {
+  background: transparent;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
 @media (max-width: 767px) {
   .not-mobile {
     display: none;
