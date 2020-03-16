@@ -110,6 +110,9 @@ main section {
   justify-content: center;
   overflow: hidden;
 }
+main section h3 {
+  padding-left: 2rem;
+}
 main section a {
   background: transparent;
   color: transparent;
