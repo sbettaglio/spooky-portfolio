@@ -61,7 +61,7 @@ a {
 
 .port-nav ul li {
   padding: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 main section {
@@ -100,54 +100,65 @@ main {
   grid-column-start: 1;
   grid-column-end: 2;
 }
-main section div {
+main section {
+  align-items: center;
+  width: 100%;
+  height: 40rem;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40rem;
-}
-main section div a:hover {
-  background-color: black;
-  opacity: 0.6;
-  color: rgb(207, 207, 207);
-}
-.grid1 div {
-  background-image: url(./images/image-1.jpg);
-}
-.grid2 div {
-  background-image: url(./images/image-2.jpg);
-}
-.grid3 div {
-  background-image: url(./images/image-3.jpg);
-}
-.grid4 div {
-  background-image: url(./images/image-4.jpg);
-}
-.grid5 div {
-  background-image: url(./images/image-5.jpeg);
-}
-.grid6 div {
-  background-image: url(./images/image-6.jpeg);
-}
-.grid7 div {
-  background-image: url(./images/image-7.jpeg);
-}
-.grid8 div {
-  background-image: url(./images/image-8.jpeg);
+  overflow: hidden;
 }
 main section a {
   background: transparent;
   color: transparent;
-  height: 97%;
+  height: 100%;
   width: 100%;
+  overflow: hidden;
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
-  padding-bottom: 3%;
-  padding-left: 3%;
   font-size: 1.5rem;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+main section a h3:hover {
+  transform: translateX(-15rem);
+  position: absolute;
+}
+
+main section a:hover {
+  background-color: black;
+  opacity: 0.6;
+  color: rgb(207, 207, 207);
+}
+
+.grid1 {
+  background-image: url(./images/image-1.jpg);
+}
+.grid2 {
+  background-image: url(./images/image-2.jpg);
+}
+.grid3 {
+  background-image: url(./images/image-3.jpg);
+}
+.grid4 {
+  background-image: url(./images/image-4.jpg);
+}
+.grid5 {
+  background-image: url(./images/image-5.jpeg);
+}
+.grid6 {
+  background-image: url(./images/image-6.jpeg);
+}
+.grid7 {
+  background-image: url(./images/image-7.jpeg);
+}
+.grid8 {
+  background-image: url(./images/image-8.jpeg);
 }
 
 @media (max-width: 767px) {
@@ -188,12 +199,13 @@ main section a {
     padding-left: 10%;
   }
   main {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
-  section {
-    width: 50%;
+  main section {
     height: 20rem;
+    background-position: center center;
+    width: 94%;
   }
 }
 @media (min-width: 1000px) {
